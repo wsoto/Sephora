@@ -13,30 +13,108 @@
  
 </head>
 <body>
-    <div id="header">
-            <ul class="topleft">
-              <li><a href="#">MAKEUP</a></li>
-              <li><a href="#">ACCOUNT</a></li>
-              <li><a href="#">BEAUTY INSIDER</a></li>
-              <li><a href="#">3 FREE SAMPLES</a></li>
-            </ul>
-
-        
-            <ul class="topright">
-              <li><a href="#">STORE</a></li>
-              <li><a href="#">BASKET</a></li>
+     <div id="header">
+          <nav>
+        <div  class="topleft">
+            <ul>
+            <li><a href="index.html">MAKEUP</a>
+                <ul> 
+          <li> <a href="">Link1</a></li>
+          <li> <a href="">Link2</a></li>
+          <li> <a href="">Link3</a></li>
+         </ul>
+                </li>
+                <li><a href="account.html">ACCOUNT</a><ul> 
+            <li> <a href="">Link1</a></li>
+            <li> <a href="">Link2</a></li>
+            <li> <a href="">Link3</a></li>
+          </ul>
+                </li>
+                <li><a href="#">BEAUTYINSIDER</a>
+                    <ul> 
+            <li> <a href="">Link1</a></li>
+            <li> <a href="">Link2</a></li>
+            <li> <a href="">Link3</a></li>
+          </ul>
+                </li>
+                <li><a href="3free-sample.html">3SAMPLES</a>
+                    <ul> 
+            <li> <a href="">Link1</a></li>
+            <li> <a href="">Link2</a></li>
+            <li> <a href="">Link3</a></li>
+          </ul>
+                </li>
             </ul>
         </div>
+        <div class="topright">
+                <ul >
+                    <li><a href="#">STORE</a></li>
+                    <li><a href="https://www.sephora.com/basket/basket.jsp">BASKET</a></li>
+                </ul>
+            </div>
+           <a href="#"> <div class="handle" src="images/hamburger.png"> MENU</a></div>
+          </nav>
+        </div>
 
-    <div id="menu">
-          <img src="images/homepage_sephoralogo_040915_image.png" class="logo" text-align="center">
-
-     </div>
+        <div>
+            <img  id="logo" src="images/homepage_sephoralogo_040915_image.png" >
+        </div>
 
 
 <div class="container">
     <img src="images/cleanse.jpg" class="beauty">
 </div>
+<footer>
+        
+        <div class="footer">
+            <div class="row">
+  </div>
+                
 
+        <!-- copyrights -->
+        <div class="copyrights">
+                
+          <p class="light-font">Copyright © 2015 Sephora USA, Inc. All rights reserved. <br />
+              1-877-SEPHORA (1-877-737-4672)</p>
+
+       <div class="social-icons">
+
+        <a class="facebook" href="https://www.facebook.com/Sephora"></a>
+        <a class="twitter" href="https://twitter.com/sephora"></a>
+        <a class="linkedin" href="#"></a>
+        <a class="dribbble" href="#"></a>
+        <a class="flickr" href="#"></a>
+        <a class="pinterest" href="#"></a>
+        <a class="vimeo" href="#"></a>
+        <a class="tumblr" href="#"></a>
+        <a class="youtube" href="https://www.youtube.com/user/sephora/tutorials"></a>
+
+
+         </div>
+
+
+
+        </div>
+        <!-- end row -->
+    </div> 
+</footer>
+ <!--==============================footer=================================--> 
+  <div id="backtotop"><a href="#top" class="topOfPage"></a></div>
+    </div>
+ <script>
+       $(document).ready(function(){
+          $('li').hover(function(){
+            $(this).find('ul>li>a').stop().fadeToggle(300);
+          });
+           $('.handle').click(function(){
+      $('nav ul').toggleClass('showing');
+    });
+        });
+
+        $(document).ready(function(){
+          $('li').hover(function(){
+            $(this).find('ul>li').stop().fadeToggle(300);
+          });
+        });
 </body>
 </html>

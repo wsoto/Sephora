@@ -1,26 +1,240 @@
+body{
+  margin: 0 !important;
+}
 #header{
-	padding-top: 10px;
 	background-color: black;
-	height: 40px;
+	height: 35px;
 	width: 100%;
 	top: 0;
+  line-height: 35px;
+  font-family: Montserrat, arial;
+  font-size: 12px;
+  color: white;
 	z-index: 10;
 	position:relative;
 }
 
-#menu{
-	width:100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	text-align: center;
-	margin: 0 auto;
+
+#logo{
+  padding: 40px 0;
+  margin: 0 43.5%;
+  width: 232px;
+  position: relative;
+}
+/*==================navbar start here===================*/
+.topleft{
+  width:70%;
+  float: left;
+  
+  
 }
 
-.logo{
-	width: 200px;
-/*	position: fixed;
-*/}
+.topleft ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+  width:100%;
+  }
+.topleft ul li{
+  float:left;
+  width: 20%;
+  height:35px;
+  text-decoration: none;
+  margin:0; 
+  /*background-color: black;*/
+  text-align: center;
+  z-index: 50;
+  position: relative;
+  }
+.topleft ul li li:hover{
+   background-color: #885D5D;
+  }
+.topleft ul li li{
+  display:none;
+  width:100%;
+  background-color: black;
+}
 
+.topright ul{
+  margin: 0 20px;
+  list-style: none;
+}
+
+.topright li{
+  float: right;
+  padding:0 20px;
+  font-size: 12px;
+  line-height: 35px;
+}
+li a{
+  color: white;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+
+  }
+  a:hover{
+    color: red;
+  }
+  
+  #header .nav-ul{
+      background-color: black;
+      overflow: hidden;
+      color:white;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+      -webkit-transition: max-height 0.4s;
+      -ms-transition: max-height 0.4s;  
+      -moz-transition: max-height 0.4s; 
+      -o-transition: max-height 0.4s;
+      o-transition: max-height 0.4s;
+    }
+
+  .handle{
+    background-image: url(images/hamburger.png);
+      width:100%;
+      font-family: Montserrat, arial;
+      font-size: 12px;
+      color: white;
+      background: black;
+      text-align: left;
+      box-sizing: border-box;
+    /*  padding: 15px 10px;*/
+      cursor: pointer;
+      color: white;
+      display:none;
+    }
+    .handle a{
+      background-image: url(images/hamburger.png);
+      color: white;
+      text-decoration: none;
+
+    }
+
+/*  end navbar*/
+
+/*================index================*/
+header {
+  width:958px;  
+  margin:0px auto; 
+  padding-top:20px; 
+  z-index:101; 
+  position:relative; }
+.main {
+  background:#fff;  
+  box-shadow:0 0 3px 1px #cbcccc; 
+  position:relative; 
+} 
+
+.bg-1 {
+  background:url(images/bg-1.jpg) center 0 repeat-x #fff;
+   width:100%;
+ }
+
+.bg-3 {background:url(images/bg-3.png) center bottom no-repeat; 
+  width:100%;
+}
+.banner-bg {
+  background:url(images/banner-bg.png) 0 0 no-repeat; margin:10px 0 0 0;
+}
+.banner-bg a {
+  display:block; width:333px; 
+  height:152px; 
+  background:url(images/banner.png) 0 0 no-repeat; 
+  margin:0 auto;
+}
+  .slider-image{
+    background:url(images/contour.jpg);
+    display:none;
+      }
+/*  3-free-sample-page*/
+
+  .container{
+      width:70%;
+      margin: 0 auto;
+    }
+    .col-md-3{
+      /*border: 1px solid bl
+      ack;*/
+      line-height: 20px;
+      height: 240px;
+      padding: 20px 0;
+      padding: 15px;
+    }
+    .col-md-3:hover{
+    }
+    .row img{
+      width: 200px;
+      height: 150px;
+    }
+     .row img:hover{
+      width: 200px;
+      height: 150px;
+      background-color:white;
+      opacity: 0.5;
+    }
+     .backdrop{
+        position:fixed;
+        top:0px;
+        left: 0px;
+        width:100%;
+        height:100%;
+        background: #000;
+        opacity:0;
+        z-index: 50;
+        display: none;
+        border: 5px #067;
+     }
+
+     .box{
+        position: absolute;
+        top:20%;
+        left:30%;
+        width:500px;
+        height: 400px;
+        z-index: 51;
+        padding: 10px;
+        border: 5px #067;
+        display: none;
+     }
+     .close{
+        float: right;
+        
+        cursor: pointer;
+        color:black;
+        z-index: 110;
+     }
+    /*  3-free-sample-page*/
+    .bg-2 {
+      background:url(images/bg-2.png) center 0 no-repeat; 
+      margin: 0 auto;
+    }
+.container_index{
+  width:75%;
+  margin:0 auto;
+}
+.page-item{
+  float:left;
+  margin-left: 25px;
+  margin-top: 35px;
+  width: 30%;
+  line-height:24px;
+  font-size: 17px;
+}
+.page-item img:hover{
+  color:brown;
+  width:300px;
+  height:350px;
+  opacity: 0.5;
+
+}
+.containerproduct{
+  width:80%;
+  margin: 0 auto;
+}
 .product{
 	float: left;
 	margin: 15px;
@@ -78,138 +292,39 @@ p{
 	padding-top: 5px;
 }
 
-body{
 
-	margin: 0;
-}
 
 @font-face {
    font-family: myFirstFont;
    url src: "@import url(http://fonts.googleapis.com/css?family=Montserrat);";
 }
 
-.topleft{
 
-	float: left;
-	padding-left: 20px;
-	
-}
-
-
-#nav{
-	width:100%;
-	padding-top: 20px;
-	text-align: center;
-	display:inline-block;
-	font-family: Montserrat, arial;
-	font-size: 12px;
-	color: black;
-}
-
-hr{
-	width: 1000px;
-	color: #c1c1c1;
-}
-
-.containerproduct{
-	margin: 0 auto;
-  margin-left: 200px;
-	padding-top: 5px;
-	width: 90%;
-	display: block;
-	clear: both;
-}
-
-}
-
-.container{
-	margin: 0 auto;
-	padding-top: 5px;
-	width: 100%;
-
-}
-
-.topright{
-	float: right;
-	padding-right: 20px;
-}
-
-li{
-		list-style: none;
-		height: 10px;
-		display:inline-block;
-		font-family: Montserrat, arial;
-		font-size: 12px;
-		color: white;
-		text-decoration: none;
-		padding-left: 20px;
-	}
-
-a{
-	color: white;
-}
-p{
-    font-family: Montserrat, arial;
-    font-size: 12px;
-    color: black;
-    line-height: 24px;
-}
-
-a:link{
-		text-decoration: none;
-		color: white;
-
-	}
-
-	a:hover{
-		color: red;
-	}
-
-	a:active{
-	color: red;
-	}
-
-/*a.title:hover{
-  width:200px; 
-  height:100px;
-  font-size:12x; 
-  text-transform:uppercase; 
-  color:white;
-  font-family: Montserrat, arial;
-  background-color: black;
-  z-index: -1;
-}
-*/
 
 footer {
       text-align: center;
       font-family: Montserrat, arial;
       font-size: 12px;
-      color:#7e7e7e;
-    }
-
-    footer .copyrights p {
-      line-height: 36px;
+      line-height: 30px;
     }
 
     footer .copyrights {
-      margin-bottom: 20px;
+    
       margin-top: 0px;
       clear: both;
       width: 90%;
       margin-left: 5%;
-      padding-top: 20px;
+      padding-top: 10px;
     }
 
     footer .social-icons {
       margin-top: 45px;
       width: 100%;
-      margin-bottom: 35px;
     }
 
-    footer .social-icons a {
+ /*   footer .social-icons a {
       margin-bottom: 10px;
-    }
+    }*/
 
     .social-icons {
       float: left;
@@ -269,3 +384,47 @@ footer {
       background-image: url(images/skype.png);
     }
 
+#backtotop{
+  float:right;
+  padding:20px; 
+  font-size:14px; 
+  font-style:italic; 
+  text-align:right;
+  z-index: 50;
+  position:relative;
+  font-color:black;
+
+}
+#backtotop a{
+  padding:8px 45px 8px 0;
+  background:url(images/tothetop.gif) 
+  right center no-repeat;
+/*  position:fixed;*/
+}
+
+/*responsive for mobile*/
+
+@media all and (max-width: 480px){
+
+      .slider{
+        display:none;
+      }
+    
+      .nav-ul{
+        max-height: 0;
+      }
+      .showing{
+        max-height: 16em;
+      }
+      #header ul li{ 
+        box-sizing: border-box;
+        width:100%;
+        padding:12px;
+        text-align: left;
+      }
+      .handle{
+        display:block;
+
+        
+      }
+  }

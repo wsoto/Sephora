@@ -4,35 +4,58 @@
   <title>Sephora</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="sephorastyle.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
  
 </head>
 <body>
-    <div id="header">
-            <ul class="topleft">
-              <li><a href="#">MAKEUP</a></li>
-              <li><a href="#">ACCOUNT</a></li>
-              <li><a href="#">BEAUTY INSIDER</a></li>
-              <li><a href="#">3 FREE SAMPLES</a></li>
-            </ul>
+<div id="header">
+    <div  class="topleft">
+      <ul>
+      <li><a href="index.html">MAKEUP</a>
+        <ul> 
+          <li> <a href="">Link1</a></li>
+          <li> <a href="">Link2</a></li>
+          <li> <a href="">Link3</a></li>
+         </ul>
+        </li>
+        <li><a href="#">ACCOUNT</a><ul> 
+            <li> <a href="">Link1</a></li>
+            <li> <a href="">Link2</a></li>
+            <li> <a href="">Link3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">BEAUTY INSIDER</a>
+          <ul> 
+            <li> <a href="">Link1</a></li>
+            <li> <a href="">Link2</a></li>
+            <li> <a href="">Link3</a></li>
+          </ul>
+        </li>
+        <li><a href="3free-sample.html">3 FREE SAMPLES</a>
+          <ul> 
+            <li> <a href="">Link1</a></li>
+            <li> <a href="">Link2</a></li>
+            <li> <a href="">Link3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="topright">
+        <ul >
+          <li><a href="#">STORE</a></li>
+          <li><a href="https://www.sephora.com/basket/basket.jsp">BASKET</a></li>
+        </ul>
+      </div>
+    </div>
 
-        
-            <ul class="topright">
-              <li><a href="#">STORE</a></li>
-              <li><a href="#">BASKET</a></li>
-            </ul>
-        </div>
-
-    <div id="menu">
-          <img src="images/homepage_sephoralogo_040915_image.png" class="logo" text-align="center">
-
-     </div>
+    <div>
+      <img  id="logo" src="images/homepage_sephoralogo_040915_image.png" >
+    </div>
 
 
 <div class="containerproduct">
@@ -55,7 +78,7 @@
 <hr/>
 <footer>
         
-        <div class="container">
+        <div class="footer">
             <div class="row">
                     
 
@@ -89,7 +112,13 @@
 
 </footer>
 
-
+ <script>
+        $(document).ready(function(){
+          $('li').hover(function(){
+            $(this).find('ul>li').stop().fadeToggle(300);
+          });
+        });
+      </script>
 
 </body>
 </html>
